@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+</head>
+<body>
+    <style>
+        body { 
+            font-family:sans-serif;
+            background-image: url("https://media.istockphoto.com/id/952839420/photo/home-appliancess-set-of-household-kitchen-technics-in-the-new-appartments-or-kitchen-e.jpg?s=612x612&w=0&k=20&c=hbtJG0OOGz_K4NVazvytWF489DimY_HrLdv2b1-I0KA=");
+            background-repeat: no-repeat;
+            background-size: cover; 
+        } 
+        #form { 
+            width: 700px; 
+            margin: 0 auto 0 auto; 
+            padding: 20px; 
+            background: rgba(223, 187, 187, 0.8);
+            backdrop-filter: saturate(180%) blur(10px); 
+            font-size: 17px; 
+            box-shadow: 10px 20px 25px rgba(0,0,0,.3); 
+            border-radius: 10px;
+        } 
+        #form h1 { 
+            color: brown; 
+            text-align: center; 
+        } 
+        #form button { 
+        padding: 10px; 
+        margin-top: 10px; 
+        width: 94%; 
+        color: white; 
+        background-color: rgb(213, 106, 106); 
+        border-radius: 4px; 
+        } 
+        .input-control { 
+            display: flex; 
+            flex-direction: column; 
+            margin: 5px;
+            } 
+        .input-control input,textarea,select{ 
+            border: 2px solid #f0f0f0; 
+            border-radius: 4px; 
+            display: block; 
+            font-size: larger; 
+            padding: 10px; 
+
+
+            
+            width: 90%; 
+            } 
+        .input-control option{
+            border: 2px solid #f0f0f0; 
+            border-radius: 4px; 
+            display: block; 
+            font-size: 12px; 
+            padding: 10px; 
+            width: 90%; 
+        }
+        .input-control.success input { 
+            border-color: #09c372; 
+            } 
+        .input-control.error input { 
+            border-color: #ff3860; 
+            
+            } 
+        .input-control .error { 
+            color: #ff3860; 
+            font-size: 9px; 
+            height: 13px; 
+        } 
+    </style>
+    <div class="container"> 
+        <form id="form" action="/auth/signup" method="post"> 
+            <h1><i>REGISTER HERE!</i></h1> 
+             <div class="input-control"> 
+                <label for="fname">NAME</label>
+                <input type="text" id="fname" name="name">
+            </div> 
+            <div class="input-control"> 
+                <label for="mobile">MOBILE NUMBER</label>
+                <input type="tel" id="mobile" name="mobile" >
+            </div> 
+            <div class="input-control"> 
+                <label for="address">ADDRESS</label>
+                <textarea name="address" id="address" style="width:90%; height:50px"></textarea>
+            </div> 
+            <div class="input-control">
+                <label for="city">CITY</label>
+                <input type="text" id="city" name="city" maxlength="10">
+            </div>
+            <div class="input-control">
+                <label for="pincode">PIN CODE</label>
+                <input type="number" id="pin" name="pin" maxlength="6"> 
+            </div> 
+            <div class="input-control">
+                <label for="state">STATE</label>
+                <input type="text" id="state" name="state">
+            </div>
+            <div class="input-control">
+                <label for="name">COMPANY</label> 
+                <input type="text" id="company" name="company>"
+            </div>
+            <div class="input-control">
+                <label for="name">MODEL</label> 
+                <input type="text" id="model" name="model">
+            </div>
+            <div class="input-control">
+                <label for="name">DEFECT</label> 
+                <input id="name" name="name" type="textarea" style="width:90%; height:50px"required>
+            </div>
+                <button id="submit" type="submit" onclick="auth()">SUBMIT</button> 
+            </form> 
+               
+</body>
+</html>

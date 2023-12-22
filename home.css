@@ -1,0 +1,149 @@
+
+ul {
+  list-style-type: none;
+  margin-left: 800px;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: rgba(127, 15, 101, 0.525);  */
+  position: absolute;
+  
+}
+.name{
+  position: absolute;
+  margin-left: 20px;
+  padding: 15px;
+  font-size: 30px;
+}
+ul li {
+  float: right;
+  align-items: end;
+  color: black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+li a:hover {
+  background-color: #9fc5d0;
+}
+.home{
+  box-sizing: border-box;
+  height: 75px;
+  box-shadow:5px 5px 5px 5px rgb(68, 56, 56);
+}
+
+.header{
+  padding: 250px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  margin: 5px;
+  background-image: url("../Images/front.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  height: 100%;
+  }
+.container{
+  display:grid;
+  grid-template-columns: auto auto;
+  width: 900px;
+  height: 400px;
+  /* margin-left: 20px; */
+}
+.container img{
+  margin: 20px;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+}
+.container p{
+  
+  padding: 10px;
+  width: 400px;
+  height: 150px;
+}
+.container h1,h3{
+  padding: 10px;
+  margin-top: 10px;
+}
+.container-1 button{
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+.foo-row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    margin: 10x;
+    height: 300px;
+}
+.foo-column{
+    width: auto;
+    height: auto;
+    color:white;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.foo-container{
+    width: auto;
+    height:400px;
+    color: white;
+}
+
+#serviceBox
+{
+    width:100%;
+    /* top right bottom left */
+    margin: 0 auto;
+    margin-top:20px;
+    /* margin-left: 40px; */
+    /* margin: 20px auto 0 20px; */
+    height:250px;
+    cursor: pointer;
+}
+.serviceBox1, .serviceBox2, .serviceBox3, .serviceBox4, .serviceBox5 {
+    float:left;
+    width:290px;
+    padding: 10px;
+}
+
+.box{
+    height: 300px;
+    width: 270px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bdbdbd;
+}
+.box img{
+  height: 250px;
+  width: 250px;
+}
+
+.serviceBox1:hover{
+  background-color: rgb(178, 74, 121);
+} 
+.serviceBox2:hover{
+  background-color: rgb(178, 74, 121);
+} 
+.serviceBox3:hover{
+  background-color: rgb(178, 74, 121);
+} 
+.serviceBox4:hover{
+  background-color: rgb(178, 74, 121);
+}
+.serviceBox5:hover{
+  background-color: rgb(178, 74, 121);
+}
+
+  
